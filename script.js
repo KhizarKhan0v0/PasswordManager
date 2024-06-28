@@ -31,13 +31,18 @@ function showScreen(){
 function addlist(){
     let userN = document.getElementById("userN");
     let passW = document.getElementById("passW");
-    passwords.push({User: userN.value , Pass : passW.value});
-    localStorage.setItem("PasA",JSON.stringify(passwords));
-    userN.value='';
-    passW.value='';
-    console.log(passwords);
+    if(userN!='' || passW!=''){
+        passwords.push({User: userN.value , Pass : passW.value});
+        localStorage.setItem("PasA",JSON.stringify(passwords));
+        userN.value='';
+        passW.value='';
+        console.log(passwords);
+        showlist();
+    }
+    else{
+        alert("UserName and Passwords Required !");
+    }
     showlist();
-    
 }
 
 
