@@ -11,15 +11,15 @@
 <body>
     <div id="Vlogin">
         <h1 style="text-align: center;">Password Manager</h1>
-        <input class="inputL" type="text" id="username" placeholder="UserName">
-        <input class="inputL" type="text" id="passcode" placeholder="Password">
+        <input class="inputL" type="text" id="username" placeholder="UserName" required>
+        <input class="inputL" type="text" id="passcode" placeholder="Password" required>
         <button onclick="showScreen()">Sign In</button>
     </div>
     <div id="Vhome">
         <div id="addpassbox">
             <h1 style="text-align: center;">Add Password</h1>
-            <input type="email" id="userN" placeholder="Enter Email">
-            <input type="password" id="passW" placeholder="Enter Password">
+            <input type="email" id="userN" placeholder="Enter Email" required>
+            <input type="password" id="passW" placeholder="Enter Password" required>
             <button class="addtolist" onclick="addlist()">Add to the list</button>
         </div>
         <br>
